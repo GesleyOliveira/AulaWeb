@@ -1,0 +1,47 @@
+h2{
+     color:blue; 
+
+}
+
+body{
+     
+     background-image: url(Images/img3.jpg);
+}
+
+#audios {
+     background-color: aqua;
+     border: 10px solid red;
+     border-radius: 15px; 
+     margin: 20px 30px 30px 40px /*comentário: somente margin e vários valores, considera os valores para sentido horário: Top,Right,Botton,Left*/
+}
+
+nav ul{
+     list-style-type: none;   
+}
+
+nav ul a li:hover{
+     background-color: yellow; 
+}
+
+nav ul a{
+text-decoration: none ;
+}
+
+nav ul li{
+     display: inline;
+     background-color:darkgreen;
+     color: azure;
+     border: 5px solid blue;
+     border-radius: 15px;
+     padding: 10px;
+     margin-right: 10px;
+}
+
+#videos {
+     background-color: bisque;
+     border: 10px solid red;
+     width: 70%;  
+     margin-left: auto; 
+     margin-right: auto;
+}
+
