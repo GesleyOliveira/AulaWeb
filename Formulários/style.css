@@ -1,0 +1,16 @@
+body{
+    background-image: url(img/img1.webp);
+    background-size: cover;
+
+}
+
+input{
+    padding: 10px; /*Referente a distância do texto digitado em relação a borda*/
+    border-radius: 20px;
+    border: 1px solid gainsboro;
+}
+
+label{
+    margin-left: 15px;
+    margin-top: 20px;
+}

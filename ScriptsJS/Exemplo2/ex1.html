@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Verificando Saldo Devedor</h1>
+    <label for="vcon">Valor do Contrato: </label>
+    <input type="text" id="vcon"> 
+<br>
+    <label for="vpag">Valor Pago: </label>
+    <input type="text" id="vpag"> 
+<br>
+    <button onclick="calcular()">Verificar dívida</button> 
+<br>  
+    <p id="saldo">Saldo: </p>
+<br>
+<script>
+    function calcular()
+{
+    vC = Number(document.getElementById('vcon').value)
+    vP = Number(document.getElementById('vpag').value)
+    saldo = vC - vP
+    document.getElementById("saldo").innerHTML = saldo
+    if (saldo<0)
+    document.getElementById("saldo").style.color = "red"
+    else 
+    document.getElementById("saldo").style.color = "green"
+}
+
+/*
+- Toda e qualquer função abre e fecha parenteses
+- onclick: uma função que ao clicar executa uma ação, deve ser posto no local que irá executar a função
+- Em JS: Comentários em /*
+- innerHTML: conteúdo 
+- + tem a função de concatenar informações
+- Number() tem a função de converter tudo em número
+*/
+
+</script>
+</body>
+</html>

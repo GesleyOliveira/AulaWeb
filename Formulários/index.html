@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div><!--Foi colocado "div" para separar as seções e poder trabalhar nelas-->
+                <label for="nome">Nome</label>
+                <input type="text" 
+                        name="nome" 
+                        id="nome"
+                        maxLength="30"
+                        size="30"
+                        placeholder="Digite seu Nome"><!--"name" é o dado que será enviado ao servidor-->
+                <label for="file">Envie a sua foto</label>
+                <input type="file"
+                        name="arquivos"
+                        multiple><!--"multiple" serve para subir múltiplos arquivos-->
+
+                <label for="idade">Qual a sua idade?</label>
+                <label>18 a 22</label>
+                <input type="radio"
+                        name="ri"
+                        value="18_22">
+                <label>23 a 30</label>
+                <input type="radio"
+                        name="ri"
+                        value="23_30">
+                <label>Acima de 31</label>
+                <input type="radio"
+                        name="ri"
+                        value="maior31"><!--"value" seria um identificar que será enviado ao servidor-->
+                <label>Selecione a sua cor preferida:</label>
+                <input type="color"
+                        name="favcor"
+                        value="#0000FF">
+                
+                <label for="tele">Telefone</label>
+                <input pattern="^\([1-9]{2}\) (?:[2-8]|9[1-9])[0-9]{3}\-[0-9]{4}$"
+                        type="tel"
+                        name="fone"
+                        id="tele">
+                <label for="cidade">Cidade</label>
+                <input type="text" 
+                        name="cid" 
+                        id="cidade"
+                        value="Votorantim" 
+                        autofocus
+                        disabled><!--"required" serve para ser obrigatório o preenchimento-->
+                <label for="cep">CEP</label>
+                <input pattern="[0-9]{5}-[0-9]{3}" 
+                        type="text"
+                        name="cep"
+                        id="cep"
+                        required>
+                <label for="datetime">Data de Nascimento</label>
+                <input min="1990-01-01" max="2023-01-01"
+                        type="date"
+                        name="bdaytime">                                                                                    
+            </div>
+            <div>
+                <label for="login">Login</label>
+                <input type="text" 
+                        name="login"
+                        id="login">                    
+                <input type="password"
+                        name="senha"
+                        id="senha"
+                        maxLength="15"
+                        placeholder="Digite sua Senha"><!--Em "Value" é o item que faz com que o valor que aparecerá automaticamente no campo é o que está em "";autofocus fixa o cursor naquele item; disabled desabilita a opção de alterar o elemento de entrada (o escrito)-->
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dados de Entrega</legend>
+                <label for="endereco">Logradouro:</label>
+                <input type="text" 
+                        name="rua"
+                        id="ender"
+                        placeholder="Nome da rua">
+                <label for="num">Número</label>
+                <input type="number"
+                        name="num"
+                        id="num"
+                        min="1"
+                        step="10"><!--min serve para o número mínimo de caracteres ser "1", step serve para a cada clicada subir num valor determinado--> 
+            <div>
+                <input type="checkbox"
+                    name="terc"
+                    id="num"
+                    checked>
+                <label for="terceiros">Entregar para Terceiros</label>
+                <label for="semana">Selecione uma semana:</label>
+                <input type="week"
+                        name="semana"
+                        id="semana">
+            </div>
+        </fieldset>
+        <fieldset>  
+            <legend>Nível de Satisfação
+            </legend>
+                <label for="satisfacao">pouco satisfeito</label>      
+                <input type="range"
+                        name="satisfacao" 
+                        min="0" 
+                        max="10">                         
+                <label for="satisfacao">muito satisfeito</label> 
+                <label>Deixe sua opinião</label>
+                <textarea name="areatexto"
+                        style="resize: none;" 
+                        id="" 
+                        cols="15" 
+                        rows="5">
+                </textarea>          
+        </fieldset>
+            <label for="uf">UF</label>
+            <select name="estado" id="uf">
+            <optgroup label="Sudeste">
+                    <option value="SP" selected>SP</option>
+                    <option value="MG">MG</option>
+                    <option value="RJ">RJ</option>
+            </optgroup>
+            <optgroup label="Norte">
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AM">AM</option>
+            </optgroup>
+            
+            </select>
+        <input type="submit" value="Cadastrar"><!--submit é um botão ele vai ficar atualizando a página, "Reset" é um botão que serve para limpar os dados -->
+        <input type="reset" value="Limpar"> 
+
+    </form>
+    
+</body>
+</html>

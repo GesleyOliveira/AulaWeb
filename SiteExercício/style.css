@@ -1,0 +1,43 @@
+
+header nav a {
+  background-color: rgb(0, 11, 128);
+  border-radius: 10px;
+  color: white;
+}
+
+img{
+  width: 60px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /*serve para configurar o site como ele deve comportar-se quando a tela diminuir. ex: celular*/
+  max-width: 80%;
+  height: 50px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+section{
+  display: flex;
+  /*flex-flow: row wrap; - serve para juntar flex-direction e flex-wrap */
+  flex-direction: row;
+  flex-wrap: wrap; 
+}
+
+#centralizado{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+
+}
+
+#ladolado{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}

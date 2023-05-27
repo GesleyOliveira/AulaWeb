@@ -1,0 +1,39 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: #0dcaf0;
+}
+
+
+label{
+    font-family: 'Roboto', sans-serif;
+}
+button{
+    font-family: 'Roboto', sans-serif;
+}
+input{
+    font-family: 'Roboto', sans-serif;
+}
+
+fieldset{
+    text-align: left;
+    font-size: 1.4em;
+    font-weight: normal;
+    width: 450px;
+    background-color: #cbe8ee;
+    border-radius: 5px;
+    
+}
+
+footer{
+    font-size: large;
+    text-align: left;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

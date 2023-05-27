@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>Exercícios JS/ECMA Script</h1>
+    <div class="flex-container">
+        <fieldset>
+            <legend>Exercício 1</legend>
+            <label for="primeiroV">Entre com o primeiro valor</label>
+            <input type="text" name="primeiroV" id="primeiroV" placeholder="Digite o valor">
+            <label for="segundoV">Entre com o segundo valor</label>
+            <input type="text" name="segundoV" id="segundoV" placeholder="Digite o valor">
+            <br>
+            <label for="resultado" id="resultado">A média dos valores é: </label>
+            <br>
+            <input type="button" value="calcular" id="btnCalcularVal" onclick="calcularVal()">
+        </fieldset>
+    </div>
+    <div class="flex-container">
+        <fieldset>
+            <legend>Exercício 2</legend>
+            <button onclick="calcularPotencia()">Calcular Potência</button>
+        </fieldset>
+    </div>
+    <div class="flex-container">
+        <fieldset>
+            <legend>Exercício 3</legend>
+            <input type="button" value="Calcular o Menor Valor" id="btnMenorNumero" onclick="calcularNum()">
+        </fieldset>
+    </div>
+    <div class="flex-container">
+        <fieldset>
+            <legend>Exercício 4</legend>
+            <input type="button" value="Exibir no Console" id="btnExibir" onclick="exibirDados()">
+        </fieldset>
+    </div>
+    <div class="flex-container">
+        <fieldset>
+            <legend>Exercício 5</legend>
+            <input type="button" value="Exibir no Console" id="btnExibirMP" onclick="exibirMarcaProc()">
+        </fieldset>
+    </div>
+    <div class="flex-container">
+        <fieldset>
+            <legend>Exercício 6</legend>
+            <button id="btnAlert" onclick="exibirAlert()">Exibir</button>
+        </fieldset>
+    </div>
+    <div class="flex-container">
+        <fieldset>
+            <legend>Exercício 7</legend>
+            <button id="btnAlertNovoEquip" onclick="exibirAlertNovoEquip()">Exibir</button>
+        </fieldset>
+    </div>
+    <div class="flex-container">
+        <fieldset>
+            <legend>Exercício 8</legend>
+            
+            <input type="button" value="a)" id="alterA" onclick="alterA()">
+            <p>Array: <span id="alternativaA"></span></p>
+
+            <input type="button" value="b)" id="alterB" onclick="alterB()">
+            <p>Exibir valores com "-": <span id="alternativaB"></span></p>
+
+            <input type="button" value="c)" id="alterC" onclick="alterC()">
+            <p>Array Z: <span id="alternativaC"></span></p>
+
+            <input type="button" value="d)" id="alterD" onclick="alterD()">
+        </fieldset>
+    </div>
+</body>
+<footer>
+    <h4> Gesley Web ® - 2023 - Fatec Votorantim</h4>
+</footer>
+</html>

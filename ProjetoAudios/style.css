@@ -1,0 +1,50 @@
+h2{
+     color:rgb(49, 61, 11); 
+     font-family: 'Roboto', sans-serif;
+}
+
+body{
+     
+     background-image: url(Images/img3.jpg);
+     font-family: "noto-sans-tamil", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+}
+
+#audios {
+     background-color: rgb(240, 240, 0);
+     border: 10px solid rgb(243, 178, 0);
+     border-radius: 15px; 
+     margin: 20px 30px 30px 40px /*comentário: somente margin e vários valores, considera os valores para sentido horário: Top,Right,Botton,Left*/
+}
+
+nav ul{
+     list-style-type: none;   
+}
+
+nav ul a li:hover{
+     background-color: yellow; 
+}
+
+nav ul a{
+text-decoration: none ;
+}
+
+nav ul li{
+     display: inline;
+     background-color:darkgreen;
+     color: azure;
+     border: 5px solid blue;
+     border-radius: 15px;
+     padding: 10px;
+     margin-right: 10px;
+}
+
+#videos {
+     background-color: rgba(123, 152, 18, 0.169);
+     border: 10px solid rgb(221, 254, 0);
+     width: 70%;  
+     margin-left: auto; 
+     margin-right: auto;
+}
+

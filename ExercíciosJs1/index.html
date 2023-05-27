@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjetoJS_1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&display=swap">
+</head>
+<body>
+    <h2>Lista de Exercícios JS</h2>
+    <div class="estilo">
+        <fieldset>
+            <legend>Ex1</legend>
+            <label for="salario">Salário</label> 
+            <input type="text" 
+            name="valorSalario" 
+            id="valSalario"
+            placeholder="Digite o salário">
+            <label for="percAum">Percentual de aumento</label>
+            <input type="text"
+            name="percAum"
+            id="percAum"
+            placeholder="Digite o % Aumento">
+
+            <p>Novo Salário: <span id="NovoS"></span></p> 
+            <input type="button" value="Calcular" 
+            id="btnNovoSal" onclick="CalcularNS()">
+        </fieldset>
+    </div>
+    <br>
+    <div class="estilo">
+        <fieldset>
+            <legend>Ex2</legend>
+            <label for="base">Base do triângulo</label> 
+            <input type="text" 
+            name="Base" 
+            id="baseT"
+            placeholder="Digite a base do triângulo">
+            <label for="altura">Altura do triângulo</label>
+            <input type="text"
+            name="altura"
+            id="alturaT"
+            placeholder="Digite a altura do triângulo">
+            <br>
+            <input type="text" readonly id="area">
+            <br>
+            <input type="button" value="Calcular" 
+            id="btnAlturaT" onclick="CalcularT()">
+        </fieldset>
+    </div>
+    <br>
+    <div class="estilo">
+        <fieldset>
+            <legend>Ex3</legend>
+            <label for="n1">Nota 1</label> 
+            <input type="text" 
+            name="n1" 
+            id="n1"
+            placeholder="Digite a primeira nota">
+            <label for="n2">Nota 2</label>
+            <input type="text"
+            name="n2"
+            id="n2"
+            placeholder="Digite a segunda nota">
+            <br>
+            <label for="media" id="media">A média das notas é: </label>
+            <br>
+            <input type="button" value="Calcular" 
+            id="btnCalcularM" onclick="CalcularNota()">
+        </fieldset>
+    </div>
+    <br>
+    <div class="estilo">
+        <fieldset>
+            <legend>Ex4</legend>
+            <label for="anoNasc">Digite o ano de nascimento</label> 
+            <input type="text" 
+            name="anoNasc" 
+            id="anoNasc"
+            placeholder="Digite o Ano de Nascimento">
+            <br>
+            <p>Você tem <span id="anoNascimento"></span></p> 
+            <p>No ano de 2050, você terá <span id="anoNascimentocinq"></span></p> 
+            <input type="button" value="Calcular" 
+            id="btnAnoNasc" onclick="CalcularanoNasc()">
+        </fieldset>
+    </div>
+    <br>
+    <div class="estilo">
+        <fieldset>
+            <legend>Ex5</legend>
+            <label for="n1">Distância</label> 
+            <input type="text" 
+            name="distancia" 
+            id="distancia"
+            placeholder="Distância em KM">
+            <label for="n2">Volume</label>
+            <input type="text"
+            name="volume"
+            id="volume"
+            placeholder="Volume em Litros">
+            <br>
+            <p>Consumo médio: <span id="ConsumoM"></span></p> 
+            <input type="button" value="Calcular" 
+            id="btnConsumoM" onclick="CalcularCM()">
+        </fieldset>
+    </div>
+    <br>
+    <div class="estilo">
+        <fieldset>
+            <legend>Ex6</legend>
+            <label for="valH">Valor Hora</label>  
+            <input type="text" 
+            name="valorH" 
+            id="valH"
+            placeholder="Digite o valor da hora">
+            <label for="qtdRef">Quantidade Refeições</label>
+            <input type="text"
+            name="refeicao"
+            id="qtdRef"
+            placeholder="Digite a Qtd Refeições">
+
+            <p>Salário Final: <span id="SalF"></span></p> 
+            <input type="button" value="Calcular" 
+            id="btnCalcular" onclick="calcular()">
+            <!-- O span permite que o conteúdo que não está aparecendo, aparecerá futuramente junto com o elemento em questão -->
+        </fieldset>    
+    </div>
+    <br>
+    <div class="estilo">
+        <fieldset>
+            <legend>Ex7</legend>
+            <input type="button" value="Gerar" 
+            id="resp" onclick="EscolherN()">
+            <p>Número: <span id="numGerado"></span></p> 
+            <p>O Valor <span id="numPI"></span></p> 
+        
+        </fieldset>
+    </div>    
+</body>
+<footer>
+    <h4> Gesley Web ® - 2023 - Fatec Votorantim</h4>
+</footer>
+</html>
+
+
