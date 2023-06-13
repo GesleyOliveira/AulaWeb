@@ -44,6 +44,6 @@ document.querySelector("#verificarClima").addEventListener("click", async (e) =>
     tempo.innerText = data.weather[0].description; 
     document.getElementById("cidadeTemp").innerText = cidade;
     document.getElementById("icone").setAttribute("src",`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`); 
-    document.getElementById("imgPais").setAttribute("src", apiBandeiraPais+data.sys.country+"/flat/64.png"34);
+    document.getElementById("imgPais").setAttribute("src", apiBandeiraPais+data.sys.country+"/flat/64.png");
     document.getElementById('imgCidade').setAttribute('src', apiBDImagemUnsplash+cidade);
 });
