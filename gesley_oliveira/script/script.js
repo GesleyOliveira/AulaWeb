@@ -9,9 +9,22 @@ function Calcular(){
 var lanche = Number(document.querySelector("input[name='promo']:checked").value);
 var qtd = Number(document.getElementById("qtd").value);
 
-var tot = (lanche * qtd) + adic;
+if (qtd<=2){
+    desconto = 5
+}
 
-document.querySelector("#tot").innerHTML = `Total: ${tot}`;
+else{
+    desconto = 10
+}
+
+var tot = (lanche * qtd) + somaad;
+var desconto = (tot * desconto) / 100;
+var total = tot - desconto
+
+
+document.querySelector("#tot").innerHTML = `Total: R$ ${tot}`;
+document.querySelector("#desconto").innerHTML = `Desconto: R$ ${desconto}`;
+document.querySelector("#total").innerHTML = `Total com Desconto: R$ ${total}`;
 }
 
 
